@@ -1,12 +1,11 @@
-import './App.css'
-
+import ImageViewer from "./ImageViewer";
 
 function App() {
   return (
     <>
-    <h1>Boilerplate Vite + React + TypeScript + Tailwind 4 + PostCSS</h1>
+      <ImageViewer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
