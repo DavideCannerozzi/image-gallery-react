@@ -7,11 +7,13 @@ export default function ImageViewer() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   return (
     <div>
-      <MainImage currentIndex={currentIndex} />
-      <NavigationControls
-        currentIndex={currentIndex}
-        setCurrentIndex={setCurrentIndex}
-      />
+      <div className="relative">
+        <MainImage currentIndex={currentIndex} />
+        <NavigationControls
+          currentIndex={currentIndex}
+          setCurrentIndex={setCurrentIndex}
+        />
+      </div>
       <ThumbnailList setCurrentIndex={setCurrentIndex} />
     </div>
   );

@@ -7,7 +7,7 @@ interface ThumbnailListProps {
 
 export default function ThumbnailList({ setCurrentIndex }: ThumbnailListProps) {
   return (
-    <div className="flex">
+    <div className="flex justify-center flex-wrap gap-4 mt-16">
       {images.map((image, index) => (
         <Thumbnail
           key={image.id}

@@ -7,7 +7,7 @@ interface ThumbnailProps {
 export default function Thumbnail({ url, title, onClick }: ThumbnailProps) {
   return (
     <div onClick={onClick}>
-      <img src={url} alt={title} />
+      <img className="w-36 h-28" src={url} alt={title} />
       <p>{title}</p>
     </div>
   );

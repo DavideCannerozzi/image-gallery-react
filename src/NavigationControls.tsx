@@ -22,13 +22,13 @@ export default function NavigationControls({
   return (
     <div>
       <button
-        className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        className="absolute top-1/2 left-2 bg-black bg-opacity-50 text-white rounded-full shadow-lg p-3 hover:scale-110 hover:shadow-blue-400 transition-transform duration-300 cursor-pointer"
         onClick={prevImage}
       >
         Prev
       </button>
       <button
-        className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        className="absolute top-1/2 right-2 bg-black bg-opacity-50 text-white rounded-full shadow-lg p-3 hover:scale-110 hover:shadow-blue-400 transition-transform duration-300 cursor-pointer"
         onClick={nextImage}
       >
         Next
