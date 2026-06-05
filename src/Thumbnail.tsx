@@ -6,9 +6,9 @@ interface ThumbnailProps {
 
 export default function Thumbnail({ url, title, onClick }: ThumbnailProps) {
   return (
-    <div onClick={onClick}>
-      <img className="w-36 h-28" src={url} alt={title} />
+    <button onClick={onClick} className="cursor-pointer">
+      <img className="w-36 h-28 object-cover" src={url} alt={title} />
       <p>{title}</p>
-    </div>
+    </button>
   );
 }

@@ -20,19 +20,19 @@ export default function NavigationControls({
   };
 
   return (
-    <div>
+    <>
       <button
-        className="absolute top-1/2 left-2 bg-black bg-opacity-50 text-white rounded-full shadow-lg p-3 hover:scale-110 hover:shadow-blue-400 transition-transform duration-300 cursor-pointer"
+        className="absolute top-1/2 left-3 -translate-y-1/2 text-black text-9xl hover:scale-110 transition cursor-pointer bg-transparent"
         onClick={prevImage}
       >
-        Prev
+        ‹
       </button>
       <button
-        className="absolute top-1/2 right-2 bg-black bg-opacity-50 text-white rounded-full shadow-lg p-3 hover:scale-110 hover:shadow-blue-400 transition-transform duration-300 cursor-pointer"
+        className="absolute top-1/2 right-3 -translate-y-1/2 text-black text-9xl hover:scale-110 transition cursor-pointer bg-transparent"
         onClick={nextImage}
       >
-        Next
+        ›
       </button>
-    </div>
+    </>
   );
 }

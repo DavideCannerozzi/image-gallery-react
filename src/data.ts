@@ -1,10 +1,10 @@
-interface Images {
+interface Image {
   id: number;
   title: string;
   url: string;
 }
 
-export const images: Images[] = [
+export const images: Image[] = [
   {
     id: 1,
     title: "Mountain",

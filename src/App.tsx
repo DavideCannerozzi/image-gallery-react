@@ -1,11 +1,7 @@
 import ImageViewer from "./ImageViewer";
 
 function App() {
-  return (
-    <>
-      <ImageViewer />
-    </>
-  );
+  return <ImageViewer />;
 }
 
 export default App;

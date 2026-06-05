@@ -6,7 +6,7 @@ import NavigationControls from "./NavigationControls";
 export default function ImageViewer() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   return (
-    <div>
+    <>
       <div className="relative">
         <MainImage currentIndex={currentIndex} />
         <NavigationControls
@@ -15,6 +15,6 @@ export default function ImageViewer() {
         />
       </div>
       <ThumbnailList setCurrentIndex={setCurrentIndex} />
-    </div>
+    </>
   );
 }
