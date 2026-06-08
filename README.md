@@ -1,15 +1,20 @@
 # Image Gallery
 
-Responsive image gallery with thumbnail navigation. Click thumbnails or arrows to change main image.
+Simple image gallery built with React, TypeScript and Tailwind CSS.
 
-## Features
-- Main image display
-- Thumbnail strip navigation
-- Arrow navigation buttons
-- Responsive design
+Users can browse images, select thumbnails and navigate through the gallery using previous and next controls.
 
 ## Tech Stack
-React 18 • TypeScript • TailwindCSS • Vite
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
 
-## Demo
-[Live Demo](link) |
+## Live Demo
+
+[View Project](https://galleryimagesreact.netlify.app/)
+
+## Screenshot
+
+![Image Gallery](./Screenshot.png)
+
