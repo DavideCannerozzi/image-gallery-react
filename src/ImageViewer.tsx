@@ -14,7 +14,10 @@ export default function ImageViewer() {
           setCurrentIndex={setCurrentIndex}
         />
       </div>
-      <ThumbnailList setCurrentIndex={setCurrentIndex} />
+      <ThumbnailList
+        setCurrentIndex={setCurrentIndex}
+        currentIndex={currentIndex}
+      />
     </>
   );
 }

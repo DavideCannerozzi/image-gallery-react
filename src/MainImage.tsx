@@ -6,6 +6,7 @@ interface MainImageProps {
 
 export default function MainImage({ currentIndex }: MainImageProps) {
   const mainImage = images[currentIndex];
+  console.log(mainImage);
   return (
     <div className="flex justify-center mt-12 ">
       <img
