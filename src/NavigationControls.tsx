@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { images } from "./data";
 
 interface NavigationControlsProps {
@@ -21,6 +22,15 @@ export default function NavigationControls({
       setCurrentIndex(currentIndex - 1);
     }
   };
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setCurrentIndex(
+        currentIndex === images.length - 1 ? 0 : currentIndex + 1,
+      );
+    }, 3000);
+    return () => clearTimeout(interval);
+  }, [currentIndex, setCurrentIndex]);
 
   return (
     <>
