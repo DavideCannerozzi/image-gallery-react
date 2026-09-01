@@ -8,51 +8,51 @@ export const images: Image[] = [
   {
     id: 1,
     title: "Mountain",
-    url: "https://picsum.photos/id/1018/800/500",
+    url: "/images/mountain.jpg",
   },
   {
     id: 2,
     title: "Forest",
-    url: "https://picsum.photos/id/1015/800/500",
+    url: "/images/forest.jpg",
   },
   {
     id: 3,
     title: "Lake",
-    url: "https://picsum.photos/id/1016/800/500",
+    url: "/images/lake.jpg",
   },
   {
     id: 4,
     title: "Desert",
-    url: "https://picsum.photos/id/1002/800/500",
+    url: "/images/desert.jpg",
   },
   {
     id: 5,
     title: "Sea",
-    url: "https://picsum.photos/id/1011/800/500",
+    url: "/images/sea.jpg",
   },
   {
     id: 6,
     title: "Waterfall",
-    url: "https://picsum.photos/id/1019/800/500",
+    url: "/images/waterfall.jpg",
   },
   {
     id: 7,
     title: "City",
-    url: "https://picsum.photos/id/1020/800/500",
+    url: "/images/city.jpg",
   },
   {
     id: 8,
     title: "Beach",
-    url: "https://picsum.photos/id/1003/800/500",
+    url: "/images/beach.jpg",
   },
   {
     id: 9,
     title: "Snow",
-    url: "https://picsum.photos/id/1005/800/500",
+    url: "/images/snow.jpg",
   },
   {
     id: 10,
     title: "Sunset",
-    url: "https://picsum.photos/id/1021/800/500",
+    url: "/images/sunset.jpg",
   },
 ];
