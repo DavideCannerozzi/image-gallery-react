@@ -5,6 +5,9 @@ interface NavigationControlsProps {
   currentIndex: number;
 }
 
+const navigationControlsClass =
+  "absolute top-1/2 -translate-y-1/2 text-black text-9xl hover:scale-110 transition cursor-pointer bg-transparent disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:scale-100";
+
 export default function NavigationControls({
   setCurrentIndex,
   currentIndex,
@@ -22,7 +25,7 @@ export default function NavigationControls({
   return (
     <>
       <button
-        className="absolute top-1/2 left-3 -translate-y-1/2 text-black text-9xl hover:scale-110 transition cursor-pointer bg-transparent disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:scale-100"
+        className={`${navigationControlsClass} left-3`}
         onClick={prevImage}
         disabled={currentIndex === 0}
         aria-label="Previous Image"
@@ -30,7 +33,7 @@ export default function NavigationControls({
         ‹
       </button>
       <button
-        className="absolute top-1/2 right-3 -translate-y-1/2 text-black text-9xl hover:scale-110 transition cursor-pointer bg-transparent disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:scale-100"
+        className={`${navigationControlsClass} right-3`}
         onClick={nextImage}
         disabled={currentIndex === images.length - 1}
         aria-label="Next Image"
