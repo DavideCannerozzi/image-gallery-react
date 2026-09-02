@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { images } from "./data";
 
 interface NavigationControlsProps {
@@ -17,6 +17,8 @@ export default function NavigationControls({
     if (currentIndex < images.length - 1) setCurrentIndex(currentIndex + 1);
   };
 
+  const [isPaused, setIsPaused] = useState(false);
+
   const prevImage = () => {
     if (currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1);
@@ -24,13 +26,14 @@ export default function NavigationControls({
   };
 
   useEffect(() => {
+    if (isPaused) return;
     const interval = setTimeout(() => {
       setCurrentIndex(
         currentIndex === images.length - 1 ? 0 : currentIndex + 1,
       );
     }, 3000);
     return () => clearTimeout(interval);
-  }, [currentIndex, setCurrentIndex]);
+  }, [currentIndex, setCurrentIndex, isPaused]);
 
   return (
     <>
@@ -49,6 +52,12 @@ export default function NavigationControls({
         aria-label="Next Image"
       >
         ›
+      </button>
+      <button
+        onClick={() => setIsPaused(!isPaused)}
+        className="block mx-auto mt-2"
+      >
+        {isPaused ? "Start" : "Pause"}
       </button>
     </>
   );
