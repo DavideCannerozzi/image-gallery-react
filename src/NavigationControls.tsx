@@ -15,11 +15,13 @@ export default function NavigationControls({
 }: NavigationControlsProps) {
   const nextImage = () => {
     if (currentIndex < images.length - 1) setCurrentIndex(currentIndex + 1);
+    setIsPaused(true);
   };
 
   const [isPaused, setIsPaused] = useState(false);
 
   const prevImage = () => {
+    setIsPaused(true);
     if (currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1);
     }
@@ -55,9 +57,9 @@ export default function NavigationControls({
       </button>
       <button
         onClick={() => setIsPaused(!isPaused)}
-        className="block mx-auto mt-2"
+        className="block mx-auto mt-2 cursor-pointer"
       >
-        {isPaused ? "Start" : "Pause"}
+        {isPaused ? "Start Slideshow" : "Pause Slideshow"}
       </button>
     </>
   );
