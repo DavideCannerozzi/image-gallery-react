@@ -6,7 +6,7 @@ import NavigationControls from "./NavigationControls";
 export default function ImageViewer() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   return (
-    <>
+    <section aria-label="Image Gallery">
       <div className="relative">
         <MainImage currentIndex={currentIndex} />
         <NavigationControls
@@ -18,6 +18,6 @@ export default function ImageViewer() {
         setCurrentIndex={setCurrentIndex}
         currentIndex={currentIndex}
       />
-    </>
+    </section>
   );
 }
